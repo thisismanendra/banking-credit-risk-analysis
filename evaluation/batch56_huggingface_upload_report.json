@@ -1,0 +1,34 @@
+{
+    "huggingface_username": "thisismanendra",
+    "model_repo": "thisismanendra/banking-credit-risk-custom-slm-v9",
+    "model_url": "https://huggingface.co/thisismanendra/banking-credit-risk-custom-slm-v9",
+    "model_visibility": "private",
+    "model_upload_verified": true,
+    "model_files": [
+        ".gitattributes",
+        "README.md",
+        "chat_template.jinja",
+        "config.json",
+        "evaluation/ollama_compatibility_report.json",
+        "evaluation/ollama_v9_preflight_report.json",
+        "evaluation/slm_v9_evaluation.json",
+        "evaluation/v9_score_bias_diagnostic.json",
+        "generation_config.json",
+        "model.safetensors",
+        "research/custom_slm_architecture.py",
+        "tokenizer.json",
+        "tokenizer_config.json"
+    ],
+    "dataset_repo": "thisismanendra/banking-credit-risk-training-dataset",
+    "dataset_url": "https://huggingface.co/datasets/thisismanendra/banking-credit-risk-training-dataset",
+    "dataset_visibility": "private",
+    "dataset_upload_verified": true,
+    "dataset_files": [
+        ".gitattributes",
+        "README.md",
+        "train.jsonl",
+        "validation.jsonl"
+    ],
+    "training_examples": 6679,
+    "validation_examples": 1673
+}

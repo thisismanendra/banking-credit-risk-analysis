@@ -1,0 +1,56 @@
+{
+    "batch": 51,
+    "grade_statistics": [
+        {
+            "grade": "A",
+            "total_loans": 208284,
+            "charged_off": 12542,
+            "charged_off_rate": 6.02
+        },
+        {
+            "grade": "B",
+            "total_loans": 347408,
+            "charged_off": 46475,
+            "charged_off_rate": 13.38
+        },
+        {
+            "grade": "C",
+            "total_loans": 337535,
+            "charged_off": 75817,
+            "charged_off_rate": 22.46
+        },
+        {
+            "grade": "D",
+            "total_loans": 177739,
+            "charged_off": 53956,
+            "charged_off_rate": 30.36
+        },
+        {
+            "grade": "E",
+            "total_loans": 82810,
+            "charged_off": 31789,
+            "charged_off_rate": 38.39
+        },
+        {
+            "grade": "F",
+            "total_loans": 28346,
+            "charged_off": 12866,
+            "charged_off_rate": 45.39
+        },
+        {
+            "grade": "G",
+            "total_loans": 8052,
+            "charged_off": 4016,
+            "charged_off_rate": 49.88
+        }
+    ],
+    "total_labelled_loans": 1190174,
+    "total_charged_off": 237461,
+    "overall_rate": 19.95,
+    "runtime_test_count": 4,
+    "runtime_tests_passed": true,
+    "app_file": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_app.py",
+    "backend_file": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_app_backend.py",
+    "launch_file": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\run_banking_assistant.bat",
+    "requirements_file": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\requirements.txt"
+}

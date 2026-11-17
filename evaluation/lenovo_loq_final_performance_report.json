@@ -1,0 +1,100 @@
+{
+    "project": "Banking and Credit Risk Analysis",
+    "batch": 53,
+    "hardware": {
+        "computer_name": "LAPTOP-J0EHHJMP",
+        "system": "Windows",
+        "windows_version": "10.0.26300",
+        "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+        "architecture": "AMD64",
+        "python_version": "3.14.6",
+        "laptop_model": "83GS",
+        "ram": {
+            "total_gb": 15.71,
+            "available_gb": 1.51,
+            "usage_percent": 90.4
+        },
+        "cpu": {
+            "physical_cores": 8,
+            "logical_cores": 12,
+            "current_frequency_mhz": 2400.0,
+            "usage_percent": 54.2
+        },
+        "nvidia_gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 6144, 4247, 0, 43",
+        "pytorch": {
+            "version": "2.11.0+cu128",
+            "cuda_available": true,
+            "gpu_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+            "gpu_vram_gb": 6.0
+        },
+        "gpu_after_benchmark": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 3947, 6144, 0"
+    },
+    "ollama_allocation": {
+        "loaded_models": "NAME        ID              SIZE      PROCESSOR    CONTEXT    RUNNER      UNTIL               \nqwen3:4b    359d7dd4bcda    2.7 GB    100% GPU     1024       llamacpp    26 minutes from now",
+        "error": ""
+    },
+    "model": "banking-assistant:final",
+    "tests": [
+        {
+            "name": "Banking knowledge",
+            "question": "What is credit risk?",
+            "answer": "Credit risk is the chance a borrower fails to repay their debt as agreed. It's calculated using expected loss (EL) = Probability of default \u00d7 Exposure at default \u00d7 Loss given default.",
+            "source": "banking-assistant:final",
+            "grounded": false,
+            "latency_seconds": 9.7681,
+            "passed": false
+        },
+        {
+            "name": "DTI definition",
+            "question": "Explain debt-to-income ratio in simple banking terms.",
+            "answer": "Debt-to-income ratio (DTI) measures your total monthly debt payments divided by your gross monthly income, calculated as (Total Monthly Debt Payments / Gross Monthly Income) \u00d7 100%. It shows how much of your earnings go toward existing debts when banks assess loan eligibility. This ratio reflects historical debt obligations relative to current income for credit decisions.",
+            "source": "banking-assistant:final",
+            "grounded": false,
+            "latency_seconds": 8.4788,
+            "passed": true
+        },
+        {
+            "name": "Overall Charged Off rate",
+            "question": "What is the overall Charged Off rate in the full dataset?",
+            "answer": "The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.1255,
+            "passed": true
+        },
+        {
+            "name": "Grade D rate",
+            "question": "Explain default rate for grade D loans.",
+            "answer": "The historical Charged Off rate for grade D is 30.36%, based on 177,739 loans (53,956 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0473,
+            "passed": true
+        },
+        {
+            "name": "Grade comparison",
+            "question": "Compare default rates across all grades.",
+            "answer": "Historical Charged Off rates across all LendingClub grades:\nGrade A: 6.02% (12,542 Charged Off out of 208,284 loans).\nGrade B: 13.38% (46,475 Charged Off out of 347,408 loans).\nGrade C: 22.46% (75,817 Charged Off out of 337,535 loans).\nGrade D: 30.36% (53,956 Charged Off out of 177,739 loans).\nGrade E: 38.39% (31,789 Charged Off out of 82,810 loans).\nGrade F: 45.39% (12,866 Charged Off out of 28,346 loans).\nGrade G: 49.88% (4,016 Charged Off out of 8,052 loans).\nOverall: 19.95% (237,461 Charged Off out of 1,190,174 loans).\nGrade G has the highest historical Charged Off rate, while Grade A has the lowest.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0,
+            "passed": true
+        },
+        {
+            "name": "DTI calculation",
+            "question": "Monthly debt payments are Rs. 10,000 and gross monthly income is Rs. 40,000. Calculate DTI.",
+            "answer": "DTI = (monthly debt payments / gross monthly income) \u00d7 100 = 25%. Your debt-to-income ratio is 25%.",
+            "source": "Deterministic Python calculation",
+            "grounded": true,
+            "latency_seconds": 0.0005,
+            "passed": true
+        }
+    ],
+    "passed_tests": 5,
+    "total_tests": 6,
+    "pass_percentage": 83.33,
+    "mean_latency_seconds": 3.07,
+    "first_dataset_query_seconds": 0.036690999986603856,
+    "cached_dataset_query_seconds": 0.00041039998177438974,
+    "cache_hit": true
+}

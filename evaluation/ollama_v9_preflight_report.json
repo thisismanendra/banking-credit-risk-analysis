@@ -1,0 +1,30 @@
+{
+    "test_model": "banking-slm-v9-preflight",
+    "source_huggingface_export": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\ollama_export\\v9_qwen2_hf",
+    "gguf_file": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\ollama_export\\v9_ollama_test\\banking_slm_v9_f16.gguf",
+    "gguf_format": "F16",
+    "gguf_size_mb": 159.78573608398438,
+    "ollama_executable": "C:\\Users\\Manendra\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "gguf_conversion": "SUCCESS",
+    "ollama_import": "SUCCESS",
+    "ollama_model_list_verified": true,
+    "local_inference": [
+        {
+            "question": "What is credit risk?",
+            "answer": "Recorded historical outcome: Charged Off.",
+            "seconds": 18.32695460319519,
+            "done": true,
+            "eval_count": 10,
+            "eval_duration": 134769000
+        },
+        {
+            "question": "Explain debt-to-income ratio in simple banking language.",
+            "answer": "Recorded historical outcome: Charged Off.",
+            "seconds": 3.911435842514038,
+            "done": true,
+            "eval_count": 10,
+            "eval_duration": 130012000
+        }
+    ],
+    "note": "This is a deployment-path test using V9 weights. It does not certify final V10 model quality."
+}

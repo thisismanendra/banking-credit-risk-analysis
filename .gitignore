@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.log
+
+# Model weights and formats
+*.pt
+*.pth
+*.safetensors
+*.gguf
+checkpoints/
+models/
+ollama_export/
+huggingface_upload/
+
+# Dataset files
+*.parquet
+*.csv
+*.arrow
+*.db
+*.sqlite
+
+# Local data and generated artifacts
+data/
+data_knowledge/
+reports/raw/
+.ipynb_checkpoints/
+
+# Environment files
+.venv/
+venv/
+SLM_Work/

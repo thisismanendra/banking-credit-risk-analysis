@@ -1,0 +1,310 @@
+{
+    "batch": 52,
+    "total_questions": 20,
+    "passed": 17,
+    "failed_or_needing_review": 3,
+    "accuracy_check_percent": 85.0,
+    "data_tests": 15,
+    "language_tests": 4,
+    "calculation_tests": 1,
+    "average_latency_seconds": 1.2054,
+    "first_data_query_seconds": 0.04977429995778948,
+    "cached_data_query_seconds": 0.0005308000836521387,
+    "cache_hit": true,
+    "results": [
+        {
+            "number": 1,
+            "question": "What is the overall Charged Off rate in the full dataset?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.1376,
+            "expected_markers": [
+                "19.95%",
+                "1,190,174",
+                "237,461"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 2,
+            "question": "Explain the default rate for grade D loans.",
+            "kind": "data",
+            "answer": "The historical Charged Off rate for grade D is 30.36%, based on 177,739 loans (53,956 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0546,
+            "expected_markers": [
+                "30.36%",
+                "177,739",
+                "53,956"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 3,
+            "question": "What is the historical default rate for grade A loans?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate for grade A is 6.02%, based on 208,284 loans (12,542 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0565,
+            "expected_markers": [
+                "6.02%"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 4,
+            "question": "What is the historical default rate for grade G loans?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate for grade G is 49.88%, based on 8,052 loans (4,016 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0595,
+            "expected_markers": [
+                "49.88%"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 5,
+            "question": "Compare default rates across all grades.",
+            "kind": "data",
+            "answer": "Historical Charged Off rates across all LendingClub grades:\nGrade A: 6.02% (12,542 Charged Off out of 208,284 loans).\nGrade B: 13.38% (46,475 Charged Off out of 347,408 loans).\nGrade C: 22.46% (75,817 Charged Off out of 337,535 loans).\nGrade D: 30.36% (53,956 Charged Off out of 177,739 loans).\nGrade E: 38.39% (31,789 Charged Off out of 82,810 loans).\nGrade F: 45.39% (12,866 Charged Off out of 28,346 loans).\nGrade G: 49.88% (4,016 Charged Off out of 8,052 loans).\nOverall: 19.95% (237,461 Charged Off out of 1,190,174 loans).\nGrade G has the highest historical Charged Off rate, while Grade A has the lowest.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0,
+            "expected_markers": [
+                "Grade A",
+                "Grade B",
+                "Grade C",
+                "Grade D",
+                "Grade E",
+                "Grade F",
+                "Grade G"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 6,
+            "question": "Which grade has the highest historical default rate?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0473,
+            "expected_markers": [
+                "G"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 7,
+            "question": "Which grade has the lowest historical default rate?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0435,
+            "expected_markers": [
+                "A"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 8,
+            "question": "How many accepted loans were Fully Paid?",
+            "kind": "data",
+            "answer": "There are 952,713 Fully Paid loans in the full dataset.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0497,
+            "expected_markers": [
+                "952,713"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 9,
+            "question": "How many loans have grade A?",
+            "kind": "data",
+            "answer": "There are 208,284 loans matching grade A.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0519,
+            "expected_markers": [
+                "208,284"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 10,
+            "question": "What is the historical default rate for 36-month loans?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0508,
+            "expected_markers": [
+                "15.97%"
+            ],
+            "passed": false,
+            "error": null
+        },
+        {
+            "number": 11,
+            "question": "What is the default rate for debt consolidation loans?",
+            "kind": "data",
+            "answer": "The historical Charged Off rate for purpose debt consolidation is 21.15%, based on 690,091 loans (145,980 Charged Off).",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0619,
+            "expected_markers": [
+                "21.15%"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 12,
+            "question": "What is the average annual income in the dataset?",
+            "kind": "data",
+            "answer": "The average annual inc is 76,244.308, calculated from 1,190,174 non-missing records.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0499,
+            "expected_markers": [
+                "76,244.308"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 13,
+            "question": "What is the median debt-to-income ratio?",
+            "kind": "data",
+            "answer": "The debt-to-income ratio (DTI) is calculated by dividing total monthly debts by gross monthly income. The median DTI represents the middle value where half of borrowers have lower ratios and half higher\u2014used historically by lenders to assess repayment capacity. This statistic describes past borrower data, not future predictions.",
+            "source": "banking-assistant:final",
+            "grounded": false,
+            "latency_seconds": 5.0089,
+            "expected_markers": [
+                "17.610"
+            ],
+            "passed": false,
+            "error": null
+        },
+        {
+            "number": 14,
+            "question": "What is the average loan amount for grade D?",
+            "kind": "data",
+            "answer": "The average loan amnt is 15,265.185, calculated from 177,739 non-missing records matching grade D.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.049,
+            "expected_markers": [
+                "15,265.185"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 15,
+            "question": "How many Charged Off loans are in the full dataset?",
+            "kind": "data",
+            "answer": "There are 237,461 Charged Off loans in the full dataset.",
+            "source": "LendingClub accepted loans",
+            "grounded": true,
+            "latency_seconds": 0.0367,
+            "expected_markers": [
+                "237,461"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 16,
+            "question": "What is credit risk?",
+            "kind": "language",
+            "answer": "Credit risk is the chance borrowers won't repay loans, potentially causing bank losses. It measures how likely a borrower defaults on their debt obligations.",
+            "source": "banking-assistant:final",
+            "grounded": false,
+            "latency_seconds": 4.5641,
+            "expected_markers": [
+                "risk",
+                "loan"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 17,
+            "question": "Explain debt-to-income ratio in simple terms.",
+            "kind": "language",
+            "answer": "Debt-to-income ratio (DTI) compares your total monthly debt payments to your gross monthly income. It uses this formula: (Total Monthly Debt Payments) / (Gross Monthly Income). Lenders use DTI to assess how easily you can manage repayments based on current earnings.",
+            "source": "banking-assistant:final",
+            "grounded": false,
+            "latency_seconds": 7.0706,
+            "expected_markers": [
+                "income",
+                "debt"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 18,
+            "question": "What does Fully Paid mean in a loan dataset?",
+            "kind": "language",
+            "answer": "I couldn't retrieve a verified result for that question from the connected LendingClub dataset. No statistic has been guessed.",
+            "source": "LendingClub DuckDB query engine",
+            "grounded": false,
+            "latency_seconds": 0.0002,
+            "expected_markers": [
+                "repaid",
+                "paid"
+            ],
+            "passed": false,
+            "error": null
+        },
+        {
+            "number": 19,
+            "question": "Why is credit utilization important?",
+            "kind": "language",
+            "answer": "Credit utilization shows your credit limit usage percentage, indicating how much you're borrowing relative to available funds. Lenders use this metric to assess repayment risk\u2014high utilization suggests higher financial strain and potential default likelihood. This directly impacts your credit score and future loan terms.",
+            "source": "banking-assistant:final",
+            "grounded": false,
+            "latency_seconds": 6.7149,
+            "expected_markers": [
+                "credit",
+                "limit"
+            ],
+            "passed": true,
+            "error": null
+        },
+        {
+            "number": 20,
+            "question": "Monthly debt payments are Rs. 10,000 and gross monthly income is Rs. 40,000. Calculate DTI.",
+            "kind": "calculation",
+            "answer": "DTI = (monthly debt payments / gross monthly income) \u00d7 100 = 25%. Your debt-to-income ratio is 25%.",
+            "source": "Deterministic Python calculation",
+            "grounded": true,
+            "latency_seconds": 0.0001,
+            "expected_markers": [
+                "25%"
+            ],
+            "passed": true,
+            "error": null
+        }
+    ]
+}

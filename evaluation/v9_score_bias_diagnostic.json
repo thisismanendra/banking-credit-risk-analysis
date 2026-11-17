@@ -1,0 +1,21 @@
+{
+    "unique_profiles": 100,
+    "question_examples": 200,
+    "profile_level_roc_auc": 0.5148,
+    "calibration_profiles": 50,
+    "diagnostic_test_profiles": 50,
+    "calibrated_threshold": -0.02315489947795868,
+    "calibration_balanced_accuracy": 0.68,
+    "diagnostic_test_accuracy": 0.4,
+    "diagnostic_test_balanced_accuracy": 0.4,
+    "diagnostic_test_confusion_matrix": [
+        [
+            14,
+            11
+        ],
+        [
+            19,
+            6
+        ]
+    ]
+}

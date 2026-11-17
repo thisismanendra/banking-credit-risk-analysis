@@ -1,0 +1,154 @@
+{
+    "batch": 50,
+    "grade_comparison_statistics": [
+        {
+            "grade": "A",
+            "total_loans": 208284,
+            "charged_off": 12542,
+            "charged_off_rate": 6.02
+        },
+        {
+            "grade": "B",
+            "total_loans": 347408,
+            "charged_off": 46475,
+            "charged_off_rate": 13.38
+        },
+        {
+            "grade": "C",
+            "total_loans": 337535,
+            "charged_off": 75817,
+            "charged_off_rate": 22.46
+        },
+        {
+            "grade": "D",
+            "total_loans": 177739,
+            "charged_off": 53956,
+            "charged_off_rate": 30.36
+        },
+        {
+            "grade": "E",
+            "total_loans": 82810,
+            "charged_off": 31789,
+            "charged_off_rate": 38.39
+        },
+        {
+            "grade": "F",
+            "total_loans": 28346,
+            "charged_off": 12866,
+            "charged_off_rate": 45.39
+        },
+        {
+            "grade": "G",
+            "total_loans": 8052,
+            "charged_off": 4016,
+            "charged_off_rate": 49.88
+        }
+    ],
+    "total_labelled_loans": 1190174,
+    "total_charged_off": 237461,
+    "overall_rate": 19.95,
+    "test_results": [
+        {
+            "question": "Compare default rates across all grades.",
+            "result": {
+                "answer": "Historical Charged Off rates across all LendingClub grades:\nGrade A: 6.02% (12,542 Charged Off out of 208,284 loans).\nGrade B: 13.38% (46,475 Charged Off out of 347,408 loans).\nGrade C: 22.46% (75,817 Charged Off out of 337,535 loans).\nGrade D: 30.36% (53,956 Charged Off out of 177,739 loans).\nGrade E: 38.39% (31,789 Charged Off out of 82,810 loans).\nGrade F: 45.39% (12,866 Charged Off out of 28,346 loans).\nGrade G: 49.88% (4,016 Charged Off out of 8,052 loans).\nOverall: 19.95% (237,461 Charged Off out of 1,190,174 loans).\nGrade G has the highest historical Charged Off rate, while Grade A has the lowest.",
+                "source": "LendingClub accepted loans",
+                "grounded": true,
+                "dataset_records": 1190174,
+                "filters": [
+                    "All loan grades A-G"
+                ],
+                "evidence": {
+                    "grades": [
+                        {
+                            "grade": "A",
+                            "total_loans": 208284,
+                            "charged_off": 12542,
+                            "charged_off_rate": 6.02
+                        },
+                        {
+                            "grade": "B",
+                            "total_loans": 347408,
+                            "charged_off": 46475,
+                            "charged_off_rate": 13.38
+                        },
+                        {
+                            "grade": "C",
+                            "total_loans": 337535,
+                            "charged_off": 75817,
+                            "charged_off_rate": 22.46
+                        },
+                        {
+                            "grade": "D",
+                            "total_loans": 177739,
+                            "charged_off": 53956,
+                            "charged_off_rate": 30.36
+                        },
+                        {
+                            "grade": "E",
+                            "total_loans": 82810,
+                            "charged_off": 31789,
+                            "charged_off_rate": 38.39
+                        },
+                        {
+                            "grade": "F",
+                            "total_loans": 28346,
+                            "charged_off": 12866,
+                            "charged_off_rate": 45.39
+                        },
+                        {
+                            "grade": "G",
+                            "total_loans": 8052,
+                            "charged_off": 4016,
+                            "charged_off_rate": 49.88
+                        }
+                    ],
+                    "overall": {
+                        "total_loans": 1190174,
+                        "charged_off": 237461,
+                        "default_rate_percent": 19.95
+                    }
+                },
+                "latency_seconds": 0.161,
+                "cached": false
+            }
+        },
+        {
+            "question": "What is the overall Charged Off rate in the full dataset?",
+            "result": {
+                "answer": "The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).",
+                "source": "LendingClub accepted loans",
+                "grounded": true,
+                "dataset_records": 1190174,
+                "filters": [],
+                "evidence": {
+                    "count": 1190174,
+                    "charged_off": 237461,
+                    "default_rate_percent": 19.95178856200858
+                },
+                "latency_seconds": 0.111,
+                "cached": false
+            }
+        },
+        {
+            "question": "Explain default rate for grade D loans.",
+            "result": {
+                "answer": "The historical Charged Off rate for grade D is 30.36%, based on 177,739 loans (53,956 Charged Off).",
+                "source": "LendingClub accepted loans",
+                "grounded": true,
+                "dataset_records": 1190174,
+                "filters": [
+                    "grade D"
+                ],
+                "evidence": {
+                    "count": 177739,
+                    "charged_off": 53956,
+                    "default_rate_percent": 30.35687159261614
+                },
+                "latency_seconds": 0.041,
+                "cached": false
+            }
+        }
+    ],
+    "all_grade_tests_passed": true
+}

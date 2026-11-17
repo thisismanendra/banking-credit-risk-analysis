@@ -1,0 +1,40 @@
+{
+    "language_model": "qwen3:4b",
+    "runtime_configuration": {
+        "ollama_parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95\n",
+        "warmup_seconds": 5.961824178695679,
+        "keep_alive": "30m",
+        "context_length": 1024
+    },
+    "data_engine": {
+        "available": true,
+        "file": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_data_engine.py",
+        "candidate_functions": [
+            {
+                "name": "answer_dataset_question",
+                "signature": "(question)"
+            },
+            {
+                "name": "ask",
+                "signature": "(question)"
+            },
+            {
+                "name": "clean",
+                "signature": "(text)"
+            }
+        ]
+    },
+    "engine_test": {
+        "function": "answer_dataset_question",
+        "signature": "(question)",
+        "question": "What is the overall Charged Off rate in the full dataset?",
+        "result": "{'answer': 'The historical Charged Off rate is 19.95%, based on 1,190,174 loans (237,461 Charged Off).', 'source': 'LendingClub accepted loans', 'dataset_records': 1190174, 'filters': [], 'evidence': {'count': 1190174, 'charged_off': 237461, 'default_rate_percent': 19.95178856200858}, 'grounded': True}",
+        "passed": true
+    },
+    "readiness": {
+        "ollama_model": "qwen3:4b",
+        "model_warmup_attempted": true,
+        "data_engine_available": true,
+        "data_engine_test_passed": true
+    }
+}

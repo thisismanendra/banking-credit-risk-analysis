@@ -1,0 +1,72 @@
+{
+    "version": "V9",
+    "architecture": "Custom Qwen3Model",
+    "parameters": 80802560,
+    "base_checkpoint": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\checkpoints\\slm_best_checkpoint.pt",
+    "best_checkpoint": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\checkpoints\\slm_banking_v9_best.pt",
+    "epochs": 2,
+    "learning_rate": 1e-05,
+    "batch_size": 2,
+    "gradient_accumulation": 4,
+    "training_examples": 6679,
+    "validation_examples": 1673,
+    "best_validation_loss": 1.1882942623576294,
+    "training_history": [
+        {
+            "epoch": 1,
+            "train_loss": 1.6301739043461347,
+            "validation_loss": 1.4634979556801722,
+            "minutes": 3.3373205582300822
+        },
+        {
+            "epoch": 2,
+            "train_loss": 0.5575102500639811,
+            "validation_loss": 1.1882942623576294,
+            "minutes": 3.3012650847434997
+        }
+    ],
+    "heldout_profile_count": 200,
+    "historical_outcome_accuracy": 0.54,
+    "confusion_matrix": [
+        [
+            11,
+            89
+        ],
+        [
+            3,
+            97
+        ]
+    ],
+    "confusion_matrix_labels": [
+        "Fully Paid",
+        "Charged Off"
+    ],
+    "classification_report": {
+        "Fully Paid": {
+            "precision": 0.7857142857142857,
+            "recall": 0.11,
+            "f1-score": 0.19298245614035087,
+            "support": 100.0
+        },
+        "Charged Off": {
+            "precision": 0.521505376344086,
+            "recall": 0.97,
+            "f1-score": 0.6783216783216783,
+            "support": 100.0
+        },
+        "accuracy": 0.54,
+        "macro avg": {
+            "precision": 0.6536098310291858,
+            "recall": 0.54,
+            "f1-score": 0.4356520672310146,
+            "support": 200.0
+        },
+        "weighted avg": {
+            "precision": 0.6536098310291858,
+            "recall": 0.54,
+            "f1-score": 0.43565206723101463,
+            "support": 200.0
+        }
+    },
+    "evaluation_type": "Historical outcome classification on held-out LendingClub records. Not prospective default prediction."
+}

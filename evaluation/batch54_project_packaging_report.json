@@ -1,0 +1,56 @@
+{
+    "project": "Banking and Credit Risk Analysis Assistant",
+    "created_at": "2026-11-18 01:59:55",
+    "python_executable": "c:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\SLM_Work\\Scripts\\python.exe",
+    "key_files": {
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\README.md": {
+            "exists": true,
+            "size_bytes": 3614
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\.gitignore": {
+            "exists": true,
+            "size_bytes": 411
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\requirements.txt": {
+            "exists": true,
+            "size_bytes": 35
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\START_BANKING_ASSISTANT.bat": {
+            "exists": true,
+            "size_bytes": 461
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\launch_banking_assistant.py": {
+            "exists": true,
+            "size_bytes": 4766
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_app.py": {
+            "exists": true,
+            "size_bytes": 9503
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_app_backend.py": {
+            "exists": true,
+            "size_bytes": 2965
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_assistant_runtime.py": {
+            "exists": true,
+            "size_bytes": 13072
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\banking_data_engine.py": {
+            "exists": true,
+            "size_bytes": 14640
+        },
+        "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\ollama_export\\final_banking_assistant\\Modelfile": {
+            "exists": true,
+            "size_bytes": 577
+        }
+    },
+    "syntax_checks": {
+        "banking_assistant_runtime.py": "PASS",
+        "banking_app_backend.py": "PASS",
+        "banking_app.py": "PASS",
+        "launch_banking_assistant.py": "PASS"
+    },
+    "launcher": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\START_BANKING_ASSISTANT.bat",
+    "readme": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\README.md",
+    "requirements": "C:\\Users\\Manendra\\OneDrive\\Documents\\SLM project\\lendingclub_credit_risk\\requirements.txt"
+}
